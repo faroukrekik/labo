@@ -1,0 +1,399 @@
+.App {
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background-image: url("https://img.freepik.com/photos-gratuite/medecin-microbiologiste-prenant-tube-echantillon-sang-partir-rack-machines-analyse-arriere-plan-du-laboratoire_482257-527.jpg?size=626&ext=jpg&ga=GA1.2.1443952226.1694108186&semt=sph");
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.hero-section button {
+  background-color: white;
+  border: none;
+  color: #4a4a4a;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.services-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.services-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-item {
+  width: 45%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.about-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+.delete {
+  background-color: #ff6347;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  margin: 20px;
+}
+
+.appointment-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.appointment-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.appointment-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.appointment-card__test,
+.appointment-card__date,
+.appointment-card__heur,
+.appointment-card__email,
+.appointment-card__phone,
+.appointment-card__description {
+  margin-bottom: 5px;
+}
+
+.appointment-card__button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100px; /* Add this line */
+  height: 40px; /* Add this line */
+}
+
+#confirmbutton {
+  background-color: #4caf50;
+}
+.buttonofappointment {
+  display: flex;
+  justify-content: center;
+}
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.section-hematologie,
+.section-microbiologie,
+.section-allergologie,
+.section-hormonologie,
+.section-immunologie,
+.section-biochimie {
+  flex-basis: calc(33.333% - 2rem);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-hematologie:hover,
+.section-microbiologie:hover,
+.section-allergologie:hover,
+.section-hormonologie:hover,
+.section-immunologie:hover,
+.section-biochimie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-hematologie h2,
+.section-microbiologie h2,
+.section-allergologie h2,
+.section-hormonologie h2,
+.section-immunologie h2,
+.section-biochimie h2 {
+  margin: 0 0 1rem;
+  color: #4a86e8;
+  transition: color 0.3s ease-in-out;
+}
+
+.section-hematologie:hover h2,
+.section-microbiologie:hover h2,
+.section-allergologie:hover h2,
+.section-hormonologie:hover h2,
+.section-immunologie:hover h2,
+.section-biochimie:hover h2 {
+  color: #333;
+}
+
+.section-hematologie p,
+.section-microbiologie p,
+.section-allergologie p,
+.section-hormonologie p,
+.section-immunologie p,
+.section-biochimie p {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  animation: pulse 2s infinite;
+}
+
+.search-input input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  color: #333;
+  font-size: 16px;
+  padding-left: 12px;
+  margin-right: 12px;
+  border-radius: 4px;
+  height: 40px;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.search-input button {
+  background-color: transparent;
+  border: none;
+  color: #4a86e8;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-input button:hover {
+  color: #333;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inscinput {
+  display: flex;
+  flex-direction: column;
+}
+
+.inscinput label {
+  font-weight: bold;
+}
+
+.inscinput input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#butt-sub {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#butt-sub:hover {
+  background-color: #0056b3;
+}
